@@ -1,0 +1,34 @@
+-- 州の補給の強化
+NDefines.NSupply.INFRA_TO_SUPPLY = 0.6  -- 0.3
+NDefines.NSupply.VP_TO_SUPPLY_BASE = 0.2 --0.2
+NDefines.NSupply.VP_TO_SUPPLY_BONUS_CONVERSION = 0.10 --0.05
+
+-- 首都補給の強化
+NDefines.NSupply.CAPITAL_SUPPLY_BASE = 6.0 -- 5.0
+NDefines.NSupply.CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0.5 -- 0.3
+NDefines.NSupply.CAPITAL_SUPPLY_MILITARY_FACTORIES = 0.7 -- 0.6
+NDefines.NSupply.CAPITAL_SUPPLY_DOCKYARDS = 0.6 -- 0.4
+-- 補給網強化 & 減衰を減らす
+NDefines.NSupply.CAPITAL_INITIAL_SUPPLY_FLOW = 8.0 -- 5.0
+NDefines.NSupply.CAPITAL_STARTING_PENALTY_PER_PROVINCE = 0.5 -- 0.5
+NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 0.50 -- 1.2
+NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 4.2 -- 2.8
+NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.5 -- 0.50
+NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.50 -- 0.70
+
+-- 高インフラ地帯ではより広くに供給を届ける
+NDefines.NSupply.SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.50 -- 0.30
+-- 自動車化されて居れば更に広く届ける
+NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_BONUS = 6.0 -- 2.2
+
+-- 鉄道網を強化する
+NDefines.NSupply.RAILWAY_BASE_FLOW = 10.0 -- 10.0
+NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 7.5 --5.0
+
+-- 海上輸送を強化する
+NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 7.5 --5.0
+
+-- 補給が届くのを高速化する
+NDefines.SUPPLY_PATH_MAX_DISTANCE = 30 --15
+NDefines.RAILWAY_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.5 --0.3
+NDefines.SUPPLY_DISRUPTION_DAILY_RECOVERY = 3.0
